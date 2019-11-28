@@ -10,3 +10,23 @@ export class Entity {
     }
     typename="Entity"
 }
+export interface Item {
+    stackable:boolean;
+    amount:number;
+    typeName:string
+}
+export interface Doer {
+    do(): void
+}
+
+export interface Machine extends Doer {
+
+}
+
+export interface Producer {
+
+}
+
+export interface EnergyConsumer {
+    consumption: number
+}
